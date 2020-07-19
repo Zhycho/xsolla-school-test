@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="assets/css/mainstyle.css"/>
+		<script src="assets/js/common.js"></script>
+		<title>Xsolla-school-test</title>
+	</head>
+	<body>
+		<main>
+			<div class="block">
+				<div class="container">
+					<h1 class="block-headline">Event Listing</h1>
+					<ul class="filter">
+						<li class="filter__item">
+							<div class="select"><span>City:</span>
+								<select name="cities">
+									<option value="All" selected="selected">All</option>
+									<option value="Amsterdam">Amsterdam</option>
+									<option value="Berlin">Berlin</option>
+									<option value="London">London</option>
+									<option value="Rim">Rim</option>
+									<option value="Sr.Petersburg">Sr.Petersburg</option>
+								</select>
+							</div>
+						</li>
+						<li class="filter__item">
+							<div class="select"><span>Month:</span>
+								<select name="months">
+									<option value="All" selected="selected">All</option>
+									<option value="02">February</option>
+									<option value="05">May</option>
+									<option value="06">June</option>
+									<option value="09">September</option>
+									<option value="11">November</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					<ul class="card-list js--events-list"></ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

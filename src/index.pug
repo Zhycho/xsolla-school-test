@@ -1,0 +1,49 @@
+mixin card(srcOfImage, title, label, altOfImage)
+    li.card
+        img(src="" + srcOfImage, alt="" + alt)
+        time(datetime="2012-12-23").card__label= label
+        h2.card__title= title
+        block
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="assets/css/mainstyle.css")
+        script(src="assets/js/common.js")
+        title Xsolla-school-test
+    body
+        main
+            .block
+                .container
+                    h1.block-headline Event Listing
+                    ul.filter
+                        li.filter__item
+                            .select
+                                span City:
+                                select(name="cities")
+                                    option(value="All" selected) All
+                                    option(value="Amsterdam") Amsterdam
+                                    option(value="Berlin") Berlin
+                                    option(value="London") London
+                                    option(value="Rim") Rim
+                                    option(value="Sr.Petersburg") Sr.Petersburg
+                        li.filter__item
+                            .select
+                                span Month:
+                                select(name="months")
+                                    option(value="All" selected) All
+                                    option(value="02") February
+                                    option(value="05") May
+                                    option(value="06") June
+                                    option(value="09") September
+                                    option(value="11") November
+                    ul.card-list.js--events-list
+                        //- +card('assets/img/event-listing__rave-autumn.jpg', 'Rave Autumn', '14', 'Rave Autumn')
+                        //-     span.card__mark
+                        //- +card('assets/img/event-listing__best-of-2019.jpg', 'Best of 2019', '20', 'Best of 2019')
+                        //-     span.card__mark
+                        //- +card('assets/img/event-listing__faderhead.jpg', 'Faderhead', '14', 'Faderhead')
+                        //- +card('assets/img/event-listing__purple-for-side.jpg', 'Purple For Side', '14', 'Purple For Side')
+                        
